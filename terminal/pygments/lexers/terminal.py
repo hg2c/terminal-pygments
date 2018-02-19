@@ -8,7 +8,7 @@ class TerminalLexer(RegexLexer):
 
     tokens = {
         'root': [
-            (r'\$.*\n', Name.Namespace),
+            (r'\$.*\n', Name.Tag),
             (r'.*\n', Text),
         ]
     }
