@@ -1,0 +1,20 @@
+$ minikube status
+minikube: Running
+cluster: Running
+kubectl: Correctly Configured: pointing to minikube-vm at 192.168.99.100
+
+$ kubectl version
+Client Version: version.Info{Major:"1", Minor:"8", GitVersion:"v1.8.2", GitCommit:"bdaeafa71f6c7c04636251031f93464384d54963", GitTreeState:"clean", BuildDate:"2017-10-24T19:48:57Z", GoVersion:"go1.8.3", Compiler:"gc", Platform:"darwin/amd64"}
+Server Version: version.Info{Major:"", Minor:"", GitVersion:"v1.9.0", GitCommit:"925c127ec6b946659ad0fd596fa959be43f0cc05", GitTreeState:"clean", BuildDate:"2018-01-26T19:04:38Z", GoVersion:"go1.9.1", Compiler:"gc", Platform:"linux/amd64"}
+
+$ helm version
+Client: &version.Version{SemVer:"v2.8.1", GitCommit:"6af75a8fd72e2aa18a2b278cfe5c7a1c5feca7f2", GitTreeState:"clean"}
+Server: &version.Version{SemVer:"v2.8.1", GitCommit:"6af75a8fd72e2aa18a2b278cfe5c7a1c5feca7f2", GitTreeState:"clean"}
+
+$ helm repo list
+NAME             URL
+stable           https://kubernetes.oss-cn-hangzhou.aliyuncs.com/charts
+local            http://127.0.0.1:8879/charts
+incubator        https://aliacs-app-catalog.oss-cn-hangzhou.aliyuncs.com/charts-incubator/
+google           https://kubernetes-charts.storage.googleapis.com
+google-incubator https://kubernetes-charts-incubator.storage.googleapis.com/
