@@ -9,6 +9,7 @@ class TerminalLexer(RegexLexer):
     tokens = {
         'root': [
             (r'\$.*\n', Name.Tag),
+            (r'#.*\n', Comment),
             (r'.*\n', Text),
         ]
     }

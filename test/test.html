@@ -89,6 +89,12 @@ minikube: Running
 cluster: Running
 kubectl: Correctly Configured: pointing to minikube-vm at 192.168.99.100
 
+<span class="c"># vi values.yaml, 启用 ingress, 配置 ingress 域名，然后用 grep 确认</span>
+ingress:
+  enabled: true
+  hosts:
+  - name: wp.192.168.99.100.xip.io
+
 <span class="nt">$ kubectl version</span>
 Client Version: version.Info{Major:&quot;1&quot;, Minor:&quot;8&quot;, GitVersion:&quot;v1.8.2&quot;, GitCommit:&quot;bdaeafa71f6c7c04636251031f93464384d54963&quot;, GitTreeState:&quot;clean&quot;, BuildDate:&quot;2017-10-24T19:48:57Z&quot;, GoVersion:&quot;go1.8.3&quot;, Compiler:&quot;gc&quot;, Platform:&quot;darwin/amd64&quot;}
 Server Version: version.Info{Major:&quot;&quot;, Minor:&quot;&quot;, GitVersion:&quot;v1.9.0&quot;, GitCommit:&quot;925c127ec6b946659ad0fd596fa959be43f0cc05&quot;, GitTreeState:&quot;clean&quot;, BuildDate:&quot;2018-01-26T19:04:38Z&quot;, GoVersion:&quot;go1.9.1&quot;, Compiler:&quot;gc&quot;, Platform:&quot;linux/amd64&quot;}
